@@ -28,7 +28,7 @@ namespace GeneralStoreAPI.Controllers
                 //Store the model in the database
                 _context.Customers.Add(model);
                 int changeCount = await _context.SaveChangesAsync();
-
+                
                 return Ok("Your customer was created!");
             }
 
